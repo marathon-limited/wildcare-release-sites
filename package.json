@@ -1,0 +1,25 @@
+{
+  "name": "wildcare-release-sites",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3111",
+    "build": "next build",
+    "start": "next start -p 3111",
+    "seed": "node scripts/seed.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "11.3.0",
+    "leaflet": "1.9.4",
+    "next": "^14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-leaflet": "4.2.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "1.9.12",
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "typescript": "5.5.4"
+  }
+}
