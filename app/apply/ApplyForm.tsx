@@ -44,7 +44,7 @@ export default function ApplyForm() {
         </div>
         <p className="note">
           A release officer will review the property and be in touch. The record is already in the
-          database and on the map — nothing needs to be typed up.
+          database and on the map, so nothing needs to be typed up.
         </p>
         <p style={{ marginTop: 16 }}>
           <Link href={`/sites/${done}`}>View the site record</Link> · <Link href="/map">See it on the map</Link>

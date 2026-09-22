@@ -1,7 +1,7 @@
 import './globals.css';
 import Link from 'next/link';
 
-export const metadata = { title: 'Wildcare — Release Site Database' };
+export const metadata = { title: 'Wildcare · Release Site Database' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <nav className="top">
-          <div className="brand">Wildcare <span>— Release Site Database</span></div>
+          <div className="brand">Wildcare <span>· Release Site Database</span></div>
           <Link href="/sites">Release sites</Link>
           <Link href="/map">Map</Link>
           <Link href="/apply">New application</Link>

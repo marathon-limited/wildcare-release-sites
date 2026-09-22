@@ -1,0 +1,6 @@
+node_modules
+.next
+.git
+*.md
+data/*.db-wal
+data/*.db-shm

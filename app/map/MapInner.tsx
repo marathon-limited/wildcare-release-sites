@@ -26,7 +26,7 @@ export default function MapView({ sites }: { sites: S[] }) {
         >
           <Popup>
             <div style={{ minWidth: 200, lineHeight: 1.5 }}>
-              <strong style={{ fontSize: 14 }}>{s.ref} — {s.name}</strong><br />
+              <strong style={{ fontSize: 14 }}>{s.ref} · {s.name}</strong><br />
               {s.suburb} · {s.hectares} ha<br />
               <span style={{ color: '#5f6f68' }}>Accepts: {s.species}</span><br />
               <span style={{ color: '#5f6f68' }}>Status: {s.status} · {s.jobs} job(s)</span><br />

@@ -20,7 +20,7 @@ export default function SiteDetail({ params }: { params: { ref: string } }) {
   return (
     <div className="wrap">
       <p className="note" style={{ marginBottom: 8 }}><Link href="/sites">← Release Site Database</Link></p>
-      <h1>{site.ref} — {site.applicant_name}</h1>
+      <h1>{site.ref} · {site.applicant_name}</h1>
       <p className="sub">
         {site.street}, {site.suburb} {site.postcode} ·{' '}
         <span className={`pill ${sitePill(site.status)}`}>{site.status}</span>
@@ -46,7 +46,7 @@ export default function SiteDetail({ params }: { params: { ref: string } }) {
             <dl className="kv">
               <dt>Email</dt><dd>{site.email}</dd>
               <dt>Phone</dt><dd>{site.phone}</dd>
-              <dt>Member number</dt><dd>{site.member_no || '—'}</dd>
+              <dt>Member number</dt><dd>{site.member_no || 'None'}</dd>
               <dt>Applied</dt><dd>{new Date(site.created_at).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}</dd>
             </dl>
             {site.availability && (
@@ -72,7 +72,7 @@ export default function SiteDetail({ params }: { params: { ref: string } }) {
                       <td>{j.species}</td>
                       <td>{j.animal_count}</td>
                       <td>{j.officer}</td>
-                      <td>{j.target_date || '—'}</td>
+                      <td>{j.target_date || 'Not set'}</td>
                       <td><span className={`pill ${jobPill(j.status)}`}>{j.status}</span></td>
                     </tr>
                   ))}
